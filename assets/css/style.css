@@ -1,17 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg-color-main: #f1f1f1;
+  --color-green: #00cc99;
+  --color-coral: #ff8080;
+  --color-blue: #0099ff;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+html {
+  width: 100%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Activamos el display grid
+Definimos las areas como string 
+Luego definimos las columnas
+Luego definimos las filas*/
 .app {
-    background: #f1f1f1;
-    
+  background: var(--bg-color-main);
+  font-family: Arial, Helvetica, sans-serif;
+  display: grid;
+  grid-template-areas: 
+  "encabezado"
+  "contenido"
+  "rodapie";
+  grid-template-columns: auto;
+  /* grid-template-rows: encabezado contenido rodapie;        */
+  grid-template-rows: 50px 100vh auto;
 }
 
 .encabezado {
-
-    
+  background: var(--color-green);
+  grid-area: encabezado;
 }
+
 .contenido {
-
+  background: var(--color-coral);
+  grid-area: contenido;
 }
 
-.rodapie { 
-
-    
+.rodapie {
+  background: var(--color-blue);
+  grid-area: rodapie;
 }
