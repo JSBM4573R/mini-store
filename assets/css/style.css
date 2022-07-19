@@ -8,6 +8,10 @@
   --color-green: #00cc99;
   --color-coral: #ff8080;
   --color-blue: #0099ff;
+  --fz-lg: 18px;
+  --fz-md: 16px;
+  --fz-sm: 14px;
+  --fz-xs: 12px;
 }
 
 *,
@@ -20,6 +24,7 @@ html {
   width: 100%;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font-size: var(--fz-md);
 }
 
 body {
@@ -48,16 +53,13 @@ Luego definimos las filas*/
 }
 
 .encabezado {
-  background: var(--color-green);
   grid-area: encabezado;
 }
 
 .contenido {
-  background: var(--color-coral);
   grid-area: contenido;
 }
 
 .rodapie {
-  background: var(--color-blue);
   grid-area: rodapie;
 }
