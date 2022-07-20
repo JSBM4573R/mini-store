@@ -1,4 +1,5 @@
 .destaques {
+  width: calc(100% - .6rem);
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: 33.3% 33.3% 33.3%;

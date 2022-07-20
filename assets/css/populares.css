@@ -1,8 +1,9 @@
 .populares {
-  padding: 3rem 2rem;
+  padding: 3rem 0;
 }
 
 .populares__card {
+  min-height: 100%;
   background: #fdfdfd;
   display: grid;
   grid-template-areas: 
@@ -10,7 +11,7 @@
   "card-base";
   grid-template-columns: 100%;
   grid-template-rows: 173px auto;
-  margin: 0 .5rem;
+  margin-right: 1.2rem;
   width: calc(20% - 1rem);
 }
 
@@ -43,6 +44,7 @@
 }
 
 .populares__contenido {
+  width: 100%;
   grid-area: contenido;
   display: flex;
   flex-wrap: wrap;
@@ -62,7 +64,7 @@
 .populares__card___descripcion {
   color: #333333;
   line-height: 1.5;
-  margin: 1rem 0;
+  margin: 0;
   text-align: justify;
 }
 
@@ -75,7 +77,6 @@
 }
 
 .populares__card___header {
-  min-height: 100%;
   border-bottom: 1px solid #dcdcdc;
   display: flex;
   flex-direction: column;
@@ -89,4 +90,11 @@
 
 .populares__card:last-child {
   margin-right: 0;
+}
+
+.populares__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #dcdcdc;
 }
